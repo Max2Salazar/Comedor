@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>-
+
+
+
+       
+        <record id="view_comedor_form" model="ir.ui.view">
+            <field name="name">Comedor</field>
+            <field name="model">comedor</field>
+            <field name="arch" type="xml">
+                <form string="Comedor">
+                
+                <sheet>
+                    <h1>Estudiantes UNEFA</h1>
+                    <group>
+                        <field name="name" />
+                        
+                    </group>
+                        
+                </sheet>
+                
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_comedor_list" model="ir.actions.act_window">
+            <field name="name">Comedor</field>
+            <field name="res_model">comedor</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_comedor_list" id="menu_COMEDOR" parent="sales_team.menu_sales" sequence="15" />
+        
+
+
+</odoo>
